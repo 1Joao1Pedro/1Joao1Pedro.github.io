@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>João Pedro Reis — Portfólio</title>
+  <meta name="description" content="Portfólio de João Pedro Reis — Desenvolvedor Back-end | Data Science">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --radius:16px; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071021 0%,var(--bg) 100%);color:#e6eef6;line-height:1.45}
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;flex-shrink:0;background:linear-gradient(135deg,var(--accent),#7c3aed);display:grid;place-items:center;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:24px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    nav{margin-left:auto}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;margin-top:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+
+    .projects{display:flex;flex-direction:column;gap:12px}
+    .proj{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
+    .proj img{width:120px;height:80px;border-radius:8px;object-fit:cover}
+    .proj h3{margin:0 0 6px 0}
+    .tag{font-size:12px;color:var(--muted);}
+    .links a{display:inline-block;margin-right:8px;padding:6px 10px;border-radius:8px;background:rgba(0,0,0,0.25);text-decoration:none;color:inherit;font-size:13px}
+
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.avatar{width:76px;height:76px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">JP</div>
+      <div>
+        <h1>João Pedro Freitas de Sousa Reis</h1>
+        <p class="lead">Desenvolvedor Back-end | Data Science — Finalizando Análise e Desenvolvimento de Sistemas (Unifavip)</p>
+        <p class="lead">Focado em soluções práticas com Python e automação.</p>
+      </div>
+      <nav>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section id="projetos" class="card">
+          <h2>Projetos em destaque</h2>
+          <div class="projects">
+
+            <article class="proj">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop&crop=faces&ixlib=rb-4.0.3&s=placeholder" alt="GLP sensor">
+              <div>
+                <h3>Sensor de detecção de vazamento de gás de cozinha (GLP) —</h3>
+                <div class="tag">Python • IoT • Automação</div> <p> Sensor que detecta vazamento de gás e fecha o registro automaticamente, com integração em Python.</p>
+                <div class="links">
+                </div>
+              </div>
+            </article>
+
+            <article class="proj">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="bot">
+              <div>
+                <h3>Bot de automação em jogos — </h3>
+                <div class="tag">Python • Automação</div>
+                <p>Bot em Python para automação de tarefas e farming no jogo. Focado em interagir com elementos da tela, reconhecimento de padrões e loops seguros para automação.</p>
+                <div class="links">
+                </div>
+              </div>
+            </article>
+
+            <article class="proj">
+              <img src="https://patoloco.com.br/arquivos/produtos/imagens_adicionais/8363ed744a93200c735d366c1dc091c31efb00c5.jpeg" alt="scraper">
+              <div>
+                <h3>Monitoramento de preços — Scraper</h3>
+                <div class="tag"> Python • Automação</div>
+                <p>Script para monitoramento de preços em lojas online (ex.: Mercado Livre, Kabum). Notifica quando encontra ofertas relevantes do preço previamente definido.</p>
+                <div class="links">
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section id="sobre" class="card">
+          <h2>Sobre mim</h2>
+          <p>Me chamo <strong>João Pedro Freitas de Sousa Reis</strong>, tenho <strong>20 anos</strong> e estou finalizando o curso de <strong>Análise e Desenvolvimento de Sistemas — Unifavip</strong>. Busco oportunidades nas áreas de <strong>Data Science</strong> ou <strong>Back-end</strong>. Sou pró-ativo, aprendo rápido e gosto de trabalhar em equipe.</p>
+
+          <h3>Habilidades técnicas</h3>
+          <div class="skills" aria-hidden>
+            <span class="skill">Python</span>
+            <span class="skill">SQL(básico)</span>
+            <span class="skill">Git / GitHub</span>
+            <span class="skill">APIs / REST</span>
+            <span class="skill">Pandas • NumPy</span>
+          </div>
+
+          <h3>Educação</h3>
+          <p>Análise e Desenvolvimento de Sistemas — Unifavip (finalizando)</p>
+        </section>
+
+      </main>
+
+      <aside id="contato">
+        <div class="card">
+          <h3>Contato</h3>
+          <p style="margin:6px 0">📧 <a href="mailto:joaoreisfr01@gmail.com">joaoreisfr01@gmail.com</a></p>
+          <p style="margin:6px 0">📱 <a href="tel:+5581998863569">(81) 99886-3569</a></p>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+          <h4>Resumo rápido</h4>
+          <p class="tag">Buscando vaga júnior em Back-end ou Data Science. Disponibilidade para aprender, bom trabalho em equipe.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      criado por João Reis • email: joaoreisfr01@gmail.com • telefone: (81) 99886-3569
+    </footer>
+  </div>
+
+</body>
+</html>
